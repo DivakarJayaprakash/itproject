@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: linear-gradient(to top left,red,yellow,rgb(102, 233, 102),rgb(109, 109, 255),rgb(255, 62, 181));
+}
+
+.container {
+    margin: 50px auto;
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 12px .2px rgb(0, 0, 0);
+    background-color: #ffffff;
+    /* color: rgb(0, 0, 0); */
+}
+.cell:hover{
+  background-color: rgb(255, 0, 21);
+  width: 97px;
+  height: 97px;
+  /* size: 34px; */
+}
+.cell:focus{
+    background-color: aqua;
+    background-color: chartreuse;
+}
+.cell:active{
+    color: #ff0000;
+    background-color: rgb(4, 142, 255);
+    /* background-image: radial-gradient(red,green,blue,yellow,orange,tomato,blue,red,green,blue,yellow,orange); */
+     background-color: rgb(238, 255, 0);
+     width: 101px;
+    height: 101px;
+}
+   
+
+.message {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 11px 20px;
+    font-size: 18px;
+    background-color: #ff0a0a;
+    color: #fff;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 18px;
+    margin-left: 15px;
+}
+button:hover{
+    background-color: #06f7ff;
+    color: #000000;
+    border:2px solid black;
+    font-size: 21px;
+}
+button:active{
+    background-color: #ff0a0a;
+    color: #ffffff;
+    
+}
